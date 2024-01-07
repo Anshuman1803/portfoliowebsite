@@ -1,0 +1,167 @@
+.darkMode {
+  background-color: rgb(17, 24, 39);
+}
+
+.darkMode a,
+.darkMode h1,
+.darkMode h2,
+.darkMode h3,
+.darkMode h4,
+.darkMode h5,
+.darkMode h6,
+.darkMode div,
+.darkMode p,
+.darkMode span {
+  color: white;
+}
+
+.darkMode .appHeader,
+.darkMode .MobileNavBar {
+  background-color: rgb(31, 41, 55);
+  z-index: 3;
+}
+.darkMode .mobileNavbar_item.active{
+  border: none;
+  background-color: rgb(17, 24, 39);
+}
+
+.darkMode .commonlinkButton {
+  border: 1px solid white;
+  color: white;
+}
+
+.darkMode .commonlinkButton:hover {
+  border: none;
+}
+
+.darkMode .downloadResumeBtn {
+  border: none;
+  color: white;
+}
+
+.darkMode .mobileNav__themeText {
+  color: rgb(253, 125, 0);
+}
+
+.darkMode .appNavbar_item::after {
+  border: 1.5px solid white;
+}
+
+.darkMode .educationYear {
+  background-color: white;
+  color: rgb(17, 24, 39);
+}
+
+.darkMode .LeftContainer__postTyping span {
+  color: rgb(249, 139, 45);
+}
+
+.darkMode .app__footer {
+  background-color: rgb(31, 41, 55);
+  color: white;
+}
+
+.darkMode .contactForm__formItem, .darkMode .contactForm__MessageBox {
+  color: white;
+}
+
+.darkMode .contactForm__formItem::placeholder {
+  color: white;
+}
+.darkMode .projectSection_projectBox, .lightMode .projectSection_projectBox{
+  background-color: rgb(31, 41, 55);
+  color: white;
+}
+
+
+
+
+
+
+.lightMode .contactForm__formItem, .lightMode .contactForm__MessageBox {
+  color: rgb(17, 24, 39);
+}
+
+.lightMode .contactForm__formItem::placeholder, .lightMode .contactForm__MessageBox::placeholder {
+  color: rgb(17, 24, 39);
+}
+
+.lightMode,
+.MobileNavBar {
+  background-color: white;
+}
+
+.lightMode .LeftContainer__postTyping span {
+  color: rgb(249, 139, 45);
+}
+
+.lightMode a,
+.lightMode h1,
+.lightMode h2,
+.lightMode h3,
+.lightMode h4,
+.lightMode h5,
+.lightMode h6,
+.lightMode div,
+.lightMode p,
+.lightMode span {
+  color: rgb(17, 24, 39);
+}
+
+.lightMode .appHeader {
+  border-bottom: 1px solid rgb(17, 24, 39);
+  background-color: white;
+}
+
+.lightMode .mobileNav__themeText {
+  color: rgb(253, 125, 0);
+}
+.lightMode .mobileNavbar_item.active{
+  border: none;
+  background-color: rgba(17, 24, 39);
+  color: white;
+}
+
+.lightMode .commonlinkButton {
+  border: 1px solid rgb(17, 24, 39);
+  color: rgb(17, 24, 39);
+}
+
+.lightMode .commonlinkButton:hover {
+  border: none;
+  color: white;
+}
+
+.lightMode .downloadResumeBtn {
+  border: none;
+  background-color: rgb(249, 139, 45);
+  color: white;
+}
+
+.lightMode .appNavbar_item::after {
+  border: 1.5px solid rgb(17, 24, 39);
+}
+
+.lightMode .educationYear {
+  background-color: rgb(17, 24, 39);
+  color: white;
+}
+
+.lightMode .educationBox:hover {
+  border-color: rgb(17, 24, 39);
+}
+
+.lightMode .educationBox:hover .educationIcon {
+  color: white;
+  background-color: rgb(17, 24, 39);
+}
+
+.lightMode .certificateLink {
+  color: white;
+}
+
+.lightMode .app__footer {
+  background-color: white;
+  color: rgb(17, 24, 39);
+  border-top: 1px solid rgb(17, 24, 39);
+}
