@@ -790,6 +790,279 @@ html {
   color: white !important;
 }
 
+
+/* Skill Section */
+.skillSection_Animation {
+  width: 100%;
+}
+
+.skillSection__skilsList {
+  --d: 25s;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  overflow: hidden;
+  list-style: none;
+  width: 100%;
+}
+
+.skillSection__skilsList>li {
+  grid-area: 1/1;
+  animation: infiniteScrolling var(--d) linear infinite;
+  font-size: 0.3rem;
+  padding: 1em;
+  text-align: center;
+  border: .2rem solid #0000;
+  background: hsl(215, 25%, 27%) padding-box;
+  color: white !important;
+  font-weight: 600;
+  display: block;
+  border-radius: 30px;
+}
+
+.skillSection__skilsList>li:nth-child(2) {
+  animation-delay: calc(-0.1428571429 * var(--d));
+}
+
+.skillSection__skilsList>li:nth-child(3) {
+  animation-delay: calc(-0.2857142857 * var(--d));
+}
+
+.skillSection__skilsList>li:nth-child(4) {
+  animation-delay: calc(-0.4285714286 * var(--d));
+}
+
+.skillSection__skilsList>li:nth-child(5) {
+  animation-delay: calc(-0.5714285714 * var(--d));
+}
+
+.skillSection__skilsList>li:nth-child(6) {
+  animation-delay: calc(-0.7142857143 * var(--d));
+}
+
+.skillSection__skilsList>li:nth-child(7) {
+  animation-delay: calc(-0.8571428571 * var(--d));
+}
+
+@keyframes infiniteScrolling {
+  14.2857142857% {
+    transform: translate(-100%);
+  }
+
+  14.2957142857% {
+    transform: translate(600%);
+  }
+}
+
+.skillSection__skilsListAlt li {
+  animation-direction: reverse;
+}
+
+.skillSection__ChartContainer {
+  width: 70%;
+  margin: 30px auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 60px;
+  column-gap: 30px;
+  padding: 0.5em 1em;
+  overflow: hidden;
+  min-height: 475px;
+}
+
+.chartContainer_Card {
+  width: 100%;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 41, 55);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.animatedSkilsCard:nth-child(1) {
+  animation: cardTwoBounce ease-in-out;
+  animation-duration: 1.2s;
+  box-shadow: 0px 0px 5px 3px rgb(229, 83, 45);
+}
+
+.animatedSkilsCard:nth-child(2) {
+  animation: cardTwoBounce ease-in-out;
+  animation-duration: 1.5s;
+  box-shadow: 0px 0px 5px 3px rgb(8, 82, 233);
+}
+
+.animatedSkilsCard:nth-child(3) {
+  animation: cardTwoBounce ease-in-out;
+  animation-duration: 1.7s;
+  box-shadow: 0px 0px 5px 3px rgb(255, 224, 8);
+}
+
+.animatedSkilsCard:nth-child(4) {
+  animation: cardTwoBounce ease-in-out;
+  animation-duration: 1.9s;
+  box-shadow: 0px 0px 5px 3px rgb(0, 216, 255);
+}
+
+.animatedSkilsCard:nth-child(5) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.2s;
+  box-shadow: 0px 0px 5px 3px rgb(143, 199, 8);
+}
+
+.animatedSkilsCard:nth-child(6) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.5s;
+  box-shadow: 0px 0px 5px 3px rgb(205, 103, 153);
+}
+
+.animatedSkilsCard:nth-child(7) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.7s;
+  box-shadow: 0px 0px 5px 3px rgb(255, 224, 8);
+}
+
+.animatedSkilsCard:nth-child(8) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.9s;
+  box-shadow: 0px 0px 5px 3px rgb(8, 238, 105);
+}
+
+@keyframes cardOneBounce {
+  0% {
+    transform: translateY(-700px) rotate(360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cardTwoBounce {
+  0% {
+    transform: translateY(700px)  rotate(360deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px)  rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.chartContainer_Card::before {
+  font-size: 0.3rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.233);
+  align-items: flex-end;
+  padding-bottom: 0.5em;
+  color: white !important;
+}
+
+
+.chartContainer_Card:nth-child(1)::before {
+  content: "85%";
+  height: 85%;
+  background-color: rgba(229, 82, 45, 0.144);
+}
+
+
+.chartContainer_Card:nth-child(2)::before {
+  content: "60%";
+  height: 60%;
+  background-color: rgba(8, 83, 233, 0.308);
+}
+
+.chartContainer_Card:nth-child(3)::before {
+  content: "80%";
+  height: 80%;
+  background-color: rgba(255, 222, 8, 0.226);
+}
+
+.chartContainer_Card:nth-child(4)::before {
+  content: "55%";
+  height: 55%;
+  background-color: rgba(0, 217, 255, 0.164);
+}
+
+.chartContainer_Card:nth-child(5)::before {
+  content: "35%";
+  height: 35%;
+  background-color: rgba(142, 199, 8, 0.267);
+}
+
+.chartContainer_Card:nth-child(6)::before {
+  content: "60%";
+  height: 60%;
+  background-color: rgba(205, 103, 152, 0.192);
+}
+
+.chartContainer_Card:nth-child(7)::before {
+  content: "30%";
+  height: 30%;
+  background-color: rgba(255, 222, 8, 0.226);
+}
+
+.chartContainer_Card:nth-child(8)::before {
+  content: "25%";
+  height: 25%;
+  background-color: rgba(8, 238, 104, 0.26);
+}
+
+.CardSkill_ICON {
+  width: 90px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
+.chartContainer_Card:nth-child(2n+1) .CardSkill_ICON {
+  animation: cardRotationOpposite 5s linear infinite;
+  transform: rotate(0);
+}
+
+.chartContainer_Card:nth-child(2n) .CardSkill_ICON {
+  animation: cardRotation 5s linear infinite;
+  transform: rotate(0);
+}
+
+@keyframes cardRotation {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes cardRotationOpposite {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+.cardSkill_SkilName {
+  font-size: 0.3rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1001px) {
   .homeSection__LeftContainer {
     padding: 0em 0.3em;
@@ -966,6 +1239,12 @@ html {
 
   .descriptionContainer__descList {
     font-size: 0.23rem;
+  }
+
+  .skillSection__ChartContainer {
+    padding: 1em 0em;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
