@@ -38,7 +38,8 @@ function HomeCompo() {
         <p className="LeftContainer__shortDescription">As a recent graduate with a passion for front-end development, I am highly skilled in crafting visually captivating and user-friendly web experiences using HTML, CSS, JavaScript, and React JS. Eager to leverage my strong foundation and adaptability, I am enthusiastic about contributing effectively to innovative projects and continuously expanding my skill set.</p>
 
         <div className="LeftContainer__buttonsContainer">
-          <a href="../assets/Anshuman.Kumar.Resume.pdf" download="Anshuman_Resume.pdf" className="commonlinkButton downloadResumeBtn">Get Resume</a>
+          <a href="https://drive.google.com/file/d/1SazTSEHqG_QXden4lNCEl2wHraWi-b05/view?usp=sharing"   target="__blank" className="commonlinkButton downloadResumeBtn">Get Resume</a>
+
           <Link to={"/portfolio"} className="commonlinkButton">Project</Link>
         </div>
       </div>
