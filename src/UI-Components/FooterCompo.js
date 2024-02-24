@@ -11,7 +11,7 @@ function FooterCompo() {
 
                 <a href="https://www.linkedin.com/in/anshuman1803/" rel="noreferrer" target='_blank' className='socialLink_item' ><i className="fa-brands fa-linkedin socialLink_item"></i></a>
 
-                <a href="https://github.com/AnshumanMahi7781" rel="noreferrer" className='socialLink_item' target='_blank' ><i className="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Anshuman1803" rel="noreferrer" className='socialLink_item' target='_blank' ><i className="fa-brands fa-github"></i></a>
                 
                 <a href="https://www.codewars.com/users/AnshumanMahi7781" rel="noreferrer" className='socialLink_item' target='_blank' ><img src="https://www.codewars.com/packs/assets/logo.f607a0fb.svg" alt="" /></a>
 

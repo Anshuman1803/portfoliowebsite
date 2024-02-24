@@ -22,6 +22,13 @@ function EducationCompo() {
           was 7-8 months. In this course, i learn the basic and advance
           concept of HTML, CSS, JavaScript, Git, React, Node and MongoDB.
         </p>
+        <a
+          rel="noreferrer"
+          href="https://drive.google.com/drive/u/0/folders/1mqf6XTqJo-TKgXBUtOll68iPOs2PNsey"
+          target="_blank"
+          className="certificateLink"
+        >Certificate</a
+        >
       </div>
 
       <div className="educationBox">
