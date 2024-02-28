@@ -1,5 +1,4 @@
 import AnshumanProfile from "../assets/Mahi.png"
-import fancyBackground from "../assets/posterBG.png"
 import ReactTypingEffect from 'react-typing-effect';
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -47,7 +46,6 @@ function HomeCompo() {
       <div className="homeSection__RightContainer">
 
         <div className="rightContainer_ProfileContainer">
-          <img src={fancyBackground} alt="AnshumanProfile" className="profile_Background" />
           <img src={AnshumanProfile} alt="AnshumanProfile" className="profilePicture" />
         </div>
 
