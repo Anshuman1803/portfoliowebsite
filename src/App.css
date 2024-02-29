@@ -949,35 +949,51 @@ html {
 
 
 .chartContainer_Card:nth-child(1)::before {
+  content: "";
+  height: 85%;
   background-color: rgba(229, 82, 45, 0.144);
 }
 
 
 .chartContainer_Card:nth-child(2)::before {
+  content: "";
+  height: 60%;
   background-color: rgba(8, 83, 233, 0.308);
 }
 
 .chartContainer_Card:nth-child(3)::before {
+  content: "";
+  height: 80%;
   background-color: rgba(255, 222, 8, 0.226);
 }
 
 .chartContainer_Card:nth-child(4)::before {
+  content: "";
+  height: 55%;
   background-color: rgba(0, 217, 255, 0.164);
 }
 
 .chartContainer_Card:nth-child(5)::before {
+  content: "";
+  height: 35%;
   background-color: rgba(142, 199, 8, 0.267);
 }
 
 .chartContainer_Card:nth-child(6)::before {
+  content: "";
+  height: 60%;
   background-color: rgba(205, 103, 152, 0.192);
 }
 
 .chartContainer_Card:nth-child(7)::before {
+  content: "";
+  height: 30%;
   background-color: rgba(255, 222, 8, 0.226);
 }
 
 .chartContainer_Card:nth-child(8)::before {
+  content: "";
+  height: 25%;
   background-color: rgba(8, 238, 104, 0.26);
 }
 
