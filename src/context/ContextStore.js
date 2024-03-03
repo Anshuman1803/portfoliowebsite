@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import EcompsterSecond from "../assets/EcommerseTwo.png"
 import EcomPoster from '../assets/ECOm.jpeg'
 import todoPoster from '../assets/ToDoProject.png'
 import weatherPoster from '../assets/reactWeather.png'
@@ -8,17 +7,6 @@ export const MyProjectContext = createContext();
 
 export default function ContextStore(props) {
     const [projectData] = useState([
-
-        {
-            projectID: 5,
-            projectTitle: "MStore E-commerce Website",
-            projectDesc :"The E-Commerce Web Application, meticulously crafted with a seamless blend of CSS, React, Node, and MongoDB, stands as a testament to cutting-edge technological integration. The use of CSS ensures an aesthetically pleasing and responsive design, creating an engaging user interface that captivates visitors from the moment they land on the platform.Incorporating React, the application boasts dynamic and interactive components, facilitating a smooth and enjoyable user experience. React's component-based architecture not only enhances the application's responsiveness but also simplifies the management of complex UI elements, ensuring scalability as the platform evolves.Powered by Node.js, the backend of the E-Commerce Web Application delivers exceptional performance and scalability.",
-            projectDescList: ["Login and SignUp Authentication", "Add and Remove To cart", "Admin Dashboard" ,"User Dashboard", "Delete Account"],
-            projectPoster: EcompsterSecond,
-            projectStatus: "In Progress",
-            projectTech: ["HTML", "CSS", "JavaScript", "React", " Node JS", "Mongo DB", "Express", "Bcrypt",],
-            projectHostLink: "https://mstore-ecommerce.netlify.app/",
-        },
         {
             projectID: 1,
             projectTitle: "E-Commerce",

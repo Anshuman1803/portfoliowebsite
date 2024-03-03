@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <nav className="app_Navbar">
             <NavLink to="/" className='appNavbar_item'>Home</NavLink>
-            <NavLink to="/portfolio" className='appNavbar_item'>Portfolio</NavLink>
+            <NavLink to="/portfolio" className='appNavbar_item'>Projects</NavLink>
             <NavLink to="/education" className='appNavbar_item'>Education</NavLink>
             <NavLink to="/skils" className='appNavbar_item'>Skils</NavLink>
             <NavLink to="/contact" className='appNavbar_item'>Contact</NavLink>
