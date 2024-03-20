@@ -7,6 +7,8 @@ import jsICON from "../assets/jsICON.png"
 import reactICON from "../assets/ReactICON.png"
 import NodeICON from "../assets/NODEICON.png"
 import sassICon from "../assets/SassICON.png"
+import tailwindICON from "../assets/TailwindICON.png"
+import githubICON from '../assets/GitHUBICON.png'
 import { useEffect } from "react"
 function SkillCompo() {
   useEffect(()=>{
@@ -81,6 +83,13 @@ function SkillCompo() {
           <img src={MonogICON} alt="ICON" className="CardSkill_ICON" />
         </div>
 
+        <div className="chartContainer_Card">
+          <img src={tailwindICON} alt="ICON" className="CardSkill_ICON" />
+        </div>
+
+        <div className="chartContainer_Card">
+          <img src={githubICON} alt="ICON" className="CardSkill_ICON" />
+        </div>
       </div>
     </section>
   )

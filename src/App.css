@@ -606,166 +606,82 @@ html {
 
 }
 
-
 /* ProjectSection */
+
 .ProjectSection {
   padding: 0.5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90%, 90%));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 550px));
   align-items: start;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
+  row-gap: 30px;
+}
 
+.projectBox__projectTitle {
+  font-size: 25px;
+  padding: .5em;
+  color: white !important;
+}
+
+.projectHostLink {
+  font-size: 22px;
+  margin-left: 20px;
+  transition: 0.1s;
+  color: white !important;
 }
 
 .projectSection_projectBox {
-  margin: 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.199);
   width: 100%;
-  min-height: 430px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+  border-radius: 10px;
+  height: 400px;
   position: relative;
+  transition: all 0.4s ease-in-out;
 }
 
-.projectSection_projectBox:nth-child(1n+3) {
-  transition: all 0.6s ease-in;
-  animation: slideLTR 0.6s ease-in-out;
-  left: 0;
-  opacity: 1;
-  animation-timeline: view();
-  animation-range: entry;
+.projectBox__status {
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  right: 0;
 }
 
-@keyframes slideLTR {
-  from {
-    left: -100%;
-    opacity: 0;
-  }
-
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-.projectBox_posterContainer {
-  padding: 5px;
-  width: 350px;
-  height: 430px;
-  border-right: 1px solid rgb(249, 139, 45);
-}
-
-.projectbox__Poster {
-  display: block;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  width: 95%;
-  margin: 0px auto;
-  height: 225px;
-}
-
-.projectBox_technologyUsedBox {
-  height: calc(100% - 230px);
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  padding: 0.2em;
-  gap: 5px;
-}
-
-
-.technologyUserBox__Techtext {
-  font-size: 18px;
-  min-width: 100px;
-  height: 35px;
-  padding: 0.3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  font-weight: 600;
-  background-color: rgb(253, 125, 0);
-  color: white !important;
-  position: relative;
-  z-index: 2;
-}
-
-.projectBox_DescriptionContainer {
-  width: calc(100% - 350px);
-  height: 420px;
-  padding: 0.1em;
-}
-
-.descriptionContainer_projectStatus {
+.projectBox__status {
   position: absolute;
   top: 0px;
   right: 0px;
   font-size: 18px;
-  width: 140px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  border-radius: 25px;
   border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #4BB543;
   color: white !important;
 }
 
-.InProgress {
+.Progress {
   background-color: #da231d;
 }
 
-.descriptionContainer__projectTitle {
-  font-size: 2.5vw;
-  font-weight: 700;
-  color: white !important;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
+.ProjectBox__posterContainer {
+  width: 100%;
+  padding: 0.1em;
+  height: 325px;
+  overflow: hidden;
 }
 
-.projectHostLink {
-  text-decoration: none;
-  font-size: 0.3rem
+.projectBox__poster {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
-
-.projectHostLink i {
-  color: rgb(253, 125, 0);
-}
-
-.descriptionContainer__descList {
-  font-size: 1.4vw;
-  list-style: none;
-  margin: 10px 0px;
-  color: white !important;
-}
-
-.descriptionContainer__descListItem {
-  position: relative;
-}
-
-.descriptionContainer__descListItem::before {
-  content: "✔";
-  margin-right: 15px;
-}
-
-.descriptionContainer__Desc {
-  font-size: 1.2vw;
-  margin: 10px 0px;
-  color: white !important;
-}
-
 
 /* Skill Section */
 .skillSection_Animation {
@@ -908,6 +824,17 @@ html {
   box-shadow: 0px 0px 5px 3px rgb(8, 238, 105);
 }
 
+.animatedSkilsCard:nth-child(9) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.9s;
+  box-shadow: 0px 0px 5px 3px #4eb5b3;
+}
+.animatedSkilsCard:nth-child(10) {
+  animation: cardOneBounce ease-in-out;
+  animation-duration: 1.9s;
+  box-shadow: 0px 0px 5px 3px rgb(0, 0, 0);
+}
+
 @keyframes cardOneBounce {
   0% {
     transform: translateY(-700px) rotate(360deg);
@@ -997,6 +924,17 @@ html {
   background-color: rgba(8, 238, 104, 0.26);
 }
 
+.chartContainer_Card:nth-child(9)::before {
+  content: "";
+  height: 65%;
+  background-color: rgb(78, 181, 179, 0.26);
+}
+.chartContainer_Card:nth-child(10)::before {
+  content: "";
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
 .CardSkill_ICON {
   width: 90px;
   object-fit: contain;
@@ -1072,22 +1010,6 @@ html {
   .educationSection {
     grid-template-columns: repeat(auto-fit, minmax(45%, 45%));
     padding: 0.5em;
-  }
-
-  .ProjectSection {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
-  }
-
-  .descriptionContainer__projectTitle {
-    font-size: 4vw;
-  }
-
-  .descriptionContainer__Desc {
-    font-size: 0.2rem;
-  }
-
-  .descriptionContainer__descList {
-    font-size: 0.2rem;
   }
 }
 
@@ -1171,56 +1093,15 @@ html {
     padding-bottom: 0.5em;
   }
 
-  .projectSection_projectBox {
-    flex-direction: column;
-  }
-
-  .projectSection_projectBox:nth-child(1n+2) {
-    transition: all 0.6s ease-in;
-    animation: slideLTR 0.6s ease-in-out;
-    left: 0;
-    opacity: 1;
-    animation-timeline: view();
-    animation-range: entry;
-  }
-
-  .projectBox_posterContainer {
-    border-right: none;
-    border-bottom: 1px solid rgb(253, 125, 0);
-    width: 100%;
-    height: fit-content;
-  }
-
-  .projectBox_technologyUsedBox {
-    height: fit-content;
-  }
-
-  .projectBox_DescriptionContainer {
-    width: 100%;
-    height: fit-content;
-  }
-
-  .projectBox_posterContainer {
-    width: 100%;
-  }
-
-  .descriptionContainer__projectTitle {
-    font-size: 5vw;
-  }
-
-  .descriptionContainer__Desc {
-    font-size: 0.3rem;
-    text-align: left;
-  }
-
-  .descriptionContainer__descList {
-    font-size: 0.23rem;
-  }
 
   .skillSection__ChartContainer {
     padding: 1em 0em;
     justify-content: center;
     gap: 50px;
+  }
+
+  .ProjectSection {
+    grid-template-columns: repeat(auto-fit, minmax(95%, 95%));
   }
 }
 
@@ -1276,7 +1157,9 @@ html {
   }
 
   .ProjectSection {
-    padding: .2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
   }
 }
 
